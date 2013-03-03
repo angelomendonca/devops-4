@@ -1,0 +1,6 @@
+Host *
+        ControlPath ~/.ssh/master-%l-%r@%h:%p
+        ControlMaster auto
+        GSSAPIAuthentication=no
+        Compression yes
+        Ciphers arcfour,blowfish-cbc
