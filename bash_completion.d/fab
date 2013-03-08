@@ -1,0 +1,35 @@
+_fab()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]} prev opts base
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+        case $cur in
+           --*)
+                COMPREPLY=( $( compgen -W "`fab --help |grep -P '\-\-' |sed 's#.*--#--#'|sed 's#\ .*##' |sed 's#,.*##'|sed 's#=.*##'`") )
+                return 0
+                ;;
+            -*)
+                COMPREPLY=( $( compgen -W "`fab --help |grep -P '\ \ \-\w' |sed 's#,.*##' |sed 's#\ \w.*##'`") )
+                return 0
+                ;;
+
+            */*)
+                # pass through
+                ;;
+            *)
+            	COMPREPLY=( $(compgen -W "`fab -l |awk 'NR<3{next}{print $1}'`" -- $cur) )
+            	return 0
+ 				#_known_hosts_real -c -a -F "$configfile" "$cur"
+                ;;
+        esac
+ 	case $prev in
+    		-H)
+    			echo "PREV"
+   			    COMPREPLY=( $(compgen -W "`grep host\  .ssh/config |awk '{print $2}'`" -- $cur) )
+    			;;
+    	esac
+}
+complete -F _fab fab
+### inside bashrc
+### . ~/.bash_completion.d/fab 
+
