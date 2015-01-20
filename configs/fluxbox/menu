@@ -15,7 +15,6 @@
 
 [exec] (Claws Mail) {claws-mail}
 [exec] (GPA) {gpa}
-[exec] (SuperTuxKart) {supertuxkart}
 [exec] (EDITME) {leafpad ~/.fluxbox/menu} </usr/share/icons/gnome/16x16/apps/text-editor.png>
 [exec] (Skype) {skype} </usr/share/pixmaps/skype.png>
 [separator]
@@ -23,7 +22,6 @@
 [exec] (1 Monitors) {/home/bluszcz/.screenlayout/one-monitor.sh} </usr/share/icons/elementary-xfce/devices/16/monitor.png>
 [exec] (Arandr) {arandr} </usr/share/icons/elementary-xfce/devices/16/monitor.png>
 [separator]
-[exec] (BitCoin-QT) {/home/bluszcz/coins/bitcoin-0.8.3-linux/bin/64/bitcoin-qt} </home/bluszcz/coins/bitcoin-0.8.3-linux/src/src/qt/res/icons/toolbar.png>
 [submenu] (Backgrounds)
 [wallpapers] (~/SparkleShare/personal/gfx/wallpapers-zen/) {feh --bg-scale}
 [end]
