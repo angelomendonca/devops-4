@@ -1,0 +1,40 @@
+[begin] (fluxbox)
+[exec] (lock) {lxlock} </usr/share/icons/Tango/22x22/actions/lock.png>
+[exit] (Exit) </usr/share/icons/Human/16x16/actions/exit.png>
+[separator]
+[exec] (Konsole) {konsole} </usr/share/icons/Tango/16x16/apps/konsole.png>
+[exec] (Chromium) {chromium-browser} </usr/share/icons/hicolor/24x24/apps/chromium-browser.png>
+[exec] (Firefox) {/home/bluszcz/firefox/firefox} </home/bluszcz/firefox/browser/chrome/icons/default/default16.png>
+[exec] (Sublime) {sublime-text} </usr/share/icons/hicolor/16x16/apps/sublime_text.png>
+[exec] (KDEvelop) {kdevelop}
+[exec] (Gnumeric) {gnumeric} </usr/share/icons/hicolor/16x16/apps/gnumeric.png>
+[exec] (Pidgin) {pidgin} </usr/share/icons/hicolor/16x16/apps/pidgin.png>
+[exec] (IRC) {quasselclient}
+[exec] (Gimp) {gimp}
+[exec] (PcManFM) {pcmanfm} </usr/share/icons/gnome/16x16/apps/file-manager.png>
+
+[exec] (Claws Mail) {claws-mail}
+[exec] (GPA) {gpa}
+[exec] (SuperTuxKart) {supertuxkart}
+[exec] (EDITME) {leafpad ~/.fluxbox/menu} </usr/share/icons/gnome/16x16/apps/text-editor.png>
+[exec] (Skype) {skype} </usr/share/pixmaps/skype.png>
+[separator]
+[exec] (2 Monitors) {/home/bluszcz/.screenlayout/new-card.sh} </usr/share/icons/elementary-xfce/devices/16/monitor.png>
+[exec] (1 Monitors) {/home/bluszcz/.screenlayout/one-monitor.sh} </usr/share/icons/elementary-xfce/devices/16/monitor.png>
+[exec] (Arandr) {arandr} </usr/share/icons/elementary-xfce/devices/16/monitor.png>
+[separator]
+[exec] (BitCoin-QT) {/home/bluszcz/coins/bitcoin-0.8.3-linux/bin/64/bitcoin-qt} </home/bluszcz/coins/bitcoin-0.8.3-linux/src/src/qt/res/icons/toolbar.png>
+[submenu] (Backgrounds)
+[wallpapers] (~/SparkleShare/personal/gfx/wallpapers-zen/) {feh --bg-scale}
+[end]
+[submenu] (Ubuntu) {Ubuntu}
+[include] (/etc/X11/fluxbox/fluxbox-menu)
+[end]
+
+[submenu] (Keyboards)
+    [exec] (gb) {setxkbmap gb}
+    [exec] (pl) {setxkbmap pl}
+    [exec] (gb) {setxkbmap gb}
+    [exec] (dk) {setxkbmap dk}
+    [exec] (es) {setxkbmap es}
+[end]
